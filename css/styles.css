@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --paragraph-font-size: 18px;
+  --font-type: "Outfit", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-type);
+  background-color: var(--very-dark-blue-main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 7.5rem;
+}
+
+p {
+  font-size: var(--paragraph-font-size);
+}
+
+.card {
+  background-color: var(--very-dark-blue-card-bg);
+  border: 1px solid var(--very-dark-blue-card-bg);
+  border-radius: 2rem;
+  width: 22.5vw;
+}
+.card_img {
+  max-width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.card_body {
+  border-bottom: 1px solid var(--very-dark-blue-line);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.card_body_title {
+  margin-top: -0.5rem;
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 600;
+}
+.card_body_title:hover {
+  color: var(--cyan);
+}
+.card_body_description {
+  color: var(--soft-blue);
+  font-weight: 300;
+  text-align: left;
+}
+.card_body__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.card_body__footer span {
+  font-size: var(--paragraph-font-size);
+}
+.card_body__footer__et {
+  color: var(--cyan);
+}
+.card_body__footer__et img {
+  margin-right: 0.5rem;
+}
+.card_body__footer__clk {
+  color: var(--soft-blue);
+}
+.card_body__footer__clk img {
+  margin-right: 0.5rem;
+}
+.card_footer {
+  padding-left: 1.5rem;
+}
+.card_footer__avatar {
+  border-radius: 50%;
+  max-width: 3rem;
+}
+.card_footer span {
+  color: var(--soft-blue);
+  font-size: 1rem;
+  align-self: center;
+  margin-left: 1.5rem;
+}
+.card_footer span a {
+  text-decoration: none;
+  color: var(--white);
+}
+.card_footer span a:hover {
+  color: var(--cyan);
+}/*# sourceMappingURL=styles.css.map */

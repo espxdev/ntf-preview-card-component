@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    //Colors
+    //Primary
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    //Neutral
+
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    //typography
+    --paragraph-font-size: 18px;
+    --font-type: 'Outfit', sans-serif;
+}
+
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;  //  1rem equals 10px normalized
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--font-type);
+    background-color: var(--very-dark-blue-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 7.5rem;   
+}
+
+p{
+    font-size: var(--paragraph-font-size);
+}
+
+.card{
+    background-color: var(--very-dark-blue-card-bg);
+    border: 1px solid var(--very-dark-blue-card-bg);
+    border-radius: 2rem;
+    width: 22.5vw;
+    
+    &_img  {
+        max-width: 100%;
+        height: auto;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+
+    &_body{
+        border-bottom: 1px solid var(--very-dark-blue-line);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        
+        &_title{
+            margin-top: -.5rem;
+            font-size: 2rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        &_title:hover{
+            color: var(--cyan);
+        }
+
+        &_description{
+            color: var(--soft-blue);
+            font-weight: 300;
+            text-align: left;
+        }
+
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            & span{
+               font-size: var(--paragraph-font-size);
+            }
+
+            &__et{
+                color: var(--cyan);
+                
+                & img{
+                    margin-right: .5rem;
+                }
+            }
+
+            &__clk{
+                color: var(--soft-blue);
+                
+                & img{
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+
+    &_footer{
+        padding-left: 1.5rem;
+
+        &__avatar{
+            border-radius: 50%;
+            max-width: 3rem;
+        }
+
+        & span{
+                color: var(--soft-blue);
+                font-size: 1rem;
+                align-self: center;
+                margin-left: 1.5rem;
+
+                & a{
+                    text-decoration: none;
+                    color: var(--white);
+                }
+
+                & a:hover{
+                    color: var(--cyan);
+                }
+            }
+    }
+}
