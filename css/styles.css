@@ -41,11 +41,34 @@ p {
   border-radius: 2rem;
   width: 22.5vw;
 }
-.card_img {
+.card_background_container {
+  position: relative;
+}
+.card_background_container_img {
   max-width: 100%;
   height: auto;
   padding: 1.5rem;
   border-radius: 2rem;
+}
+.card_background_container_view {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  opacity: 0;
+  background-color: var(--cyan);
+  top: 1.5rem;
+  bottom: 1.7rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+.card_background_container_view_icon {
+  position: absolute;
+  top: 12rem;
+  left: 11.5rem;
+}
+.card_background_container_view:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 .card_body {
   border-bottom: 1px solid var(--very-dark-blue-line);
@@ -105,4 +128,18 @@ p {
 }
 .card_footer span a:hover {
   color: var(--cyan);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    padding: 2rem;
+  }
+  .card {
+    width: 90vw;
+  }
+  .card_background_container_view_icon {
+    position: absolute;
+    top: 13rem;
+    left: 13rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
